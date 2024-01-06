@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-container {
+  height: 650px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(224, 23%, 55%)
+}
+
+.card-image img {
+  width: 400px;
+  display: block;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 1.7rem;
+}
+
+.card-summary p {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  text-align: center;
+  padding: 2rem;
+  color: rgb(67, 73, 77);
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(239, 235, 235);
+  width: 90%;
+  margin-left: 20px;
+  padding-inline: 20px;
+  border-radius: 10px;
+}
+
+.annual-plan {
+  display: flex;
+  gap: 20px;
+  padding: 1rem 0.5rem;
+}
+
+.annual-plan i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(181, 177, 216);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h6{
+font-size:17px;
+font-weight:bold;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: rgb(82, 81, 81);
+}
+.btn1 {
+  height: 40px;
+  width: 350px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgb(25, 25, 213);
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background-color: hsl(223, 47%, 23%);
+  }
+}
+
+.btn2 {
+  height: 40px;
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(90, 85, 85);
+  font-weight: bold;
+  background-color: #fff;
+}
+
+@media (width < 700px) {
+  body {
+    background-image: none;
+    /* background-color: aqua; */
+  }
+.card-image img{
+  width: 320px;
+  /* margin-left: 40px; */
+}
+.card-container{
+  width: 320px;
+  height: 550px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.btn1{
+  width: 280px;
+margin-top:40px;  
+}
+.btn2{
+  width:280px;
+  margin-bottom: 5px;
+}
+.card-summary p{
+  font-size:0.8rem;
+  padding-bottom:15px;
+}
+.card-summary h1{
+  font-size: 0.8 rem;
+}
+}
